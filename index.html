@@ -21,6 +21,44 @@
 
   <style>
 
+  @media (max-width: 800px) {
+    #header-home { 
+      height: 6rem;
+    }
+
+    #header-home .container {
+      padding-top: 0.7rem;
+    }
+
+    #footer-content .container {
+      
+    }
+  }
+
+  @media (max-width: 500px) {
+    #home-a {
+      padding-bottom: 0 !important;
+      padding-top: 1.2rem !important; 
+    }
+
+
+    #home-b {
+      padding: 0;
+      height: 45vh !important;
+      
+    }
+
+    #home-b .container .stats {
+      padding-bottom: 2rem !important;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+
   * {
       margin: 0;
       padding: 0;
@@ -54,11 +92,7 @@
  
   }
 
-  a {
-    font-weight: bold;
-    font-size: 1.3rem;
-    text-decoration: none;
-    color: #333; }
+
 
   ul {
     list-style: none; 
@@ -126,7 +160,6 @@
     background-color: #f4f4f4;
     height: 30vh;
     max-width: 1280px;
-    padding: 5rem;
     margin: auto;
     overflow: hidden;
     display: flex;
@@ -144,18 +177,23 @@
   .stats ul {
     display: flex; 
     
+    
   }
 
   .stats li {
     padding: 1rem 1.5rem;
+    list-style: none;
   }
 
   .stats a {
     text-decoration: none;
     color: #333;
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2rem;
     border-bottom: 3px transparent solid;
     padding-bottom: 0.5rem;
+    
   }
 
   .stats a:hover {
@@ -184,10 +222,10 @@
 }
 
 #main-footer .footer-content {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   height: 5rem;
-  align-items: center; 
+  text-align: center;
+  padding-top: 1.5rem;
 }
 
 
