@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Dosis"
+      rel="stylesheet"
+    />
+    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>Giuliana Ganci | My Home Page</title>
+  </head>
+
+  <style>
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+  body {
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4; 
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1280px;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden; 
+  }
+
+
+  /* Header */
+  #header-home {
+    background-color: steelblue;
+  }
+
+  a {
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #333; }
+
+  ul {
+    list-style: none; }
+
+  
+
+  #logo {
+    width: 70px;
+    height: 70px;
+    color: #fff;
+    text-transform: uppercase; 
+  }
+
+  #main-nav {
+    background-color: steelblue;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0; 
+  }
+
+  h2 {
+    margin-top: 1.5rem;
+  }
+
+  span {
+    color: #ffbc00;
+  }
+
+  /* Title */
+  #home-a {
+    max-width: 1280px;
+    padding: 2rem;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 5rem;
+    background-color: #f4f4f4;
+  }
+
+  #home-a .container {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .mid-line {
+    height: 2px;
+    width: 90%;
+  	background: #ffbc00;
+    display: block;
+  	margin: 0 auto 1rem auto;
+  }
+
+
+  /* Buttons */
+
+  .bottom-line {
+    height: 2px;
+    width: 50%%;
+  	background: #ffbc00;
+    display: block;
+  	margin: 0 auto 1rem auto;
+  }
+
+  #home-b {
+    background-color: #f4f4f4;
+    height: 30vh;
+    max-width: 1280px;
+    padding: 5rem;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+   
+  }
+
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem; 
+    margin: 0 auto;
+    
+  }
+
+  .stats ul {
+    display: flex; 
+    
+  }
+
+  .stats li {
+    padding: 1rem 1.5rem;
+  }
+
+  .stats a {
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+  }
+
+  .stats a:hover {
+    color: steelblue;
+    border-color: #ffbc00; 
+  }
+
+  /* Last */
+  #home-c {
+    max-width: 1280px;
+    padding-bottom: 3rem;
+    padding-top: 1.5rem;
+    margin: auto;
+    overflow: hidden;
+    background-color: #f4f4f4;
+  }
+
+
+
+  /* Footer */
+  
+#main-footer {
+  background: #333;
+  color: #fff;
+  height: 5rem; 
+}
+
+#main-footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center; 
+}
+
+
+
+/* #main-footer .footer-content .social .fab {
+  margin-right: 1rem;
+  border: 2px #fff solid;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem; 
+} */
+    
+
+
+  </style>
+
+  <body>
+    <!-- Header -->
+    <header id="header-home">
+      <div class="container">
+        <nav id="main-nav">
+          <img src="gg2.png" alt="My Sites" id="logo"/>
+					<h2><span>Giuliana</span> Ganci</h2>
+        </nav>
+        <div class="top-line"></div>
+        <div class="header-content">
+        </div>
+      </div>
+    </header>
+
+    <!-- Title  -->
+    <section id="home-a" class="text-center py-2">
+      <div class="container">
+        <h1>Check out some of My Projects</h1>
+      </div>
+      <div class="mid-line"></div>
+    </section>
+
+    <!-- Buttons -->
+    <section id="home-b" class="container text-center py-2">
+      <div class="stats">
+        <ul>
+          <li><a href="../edgeledger/">EdgeLedger</a></li>
+          <li><a href="../portfolio_website/">Portfolio Website</a></li>
+          <li><a href="../NEWSGRID_WEBSITE/">NewsGrid</a></li>
+        </ul>			
+      </div>
+    </section>
+    <div class="bottom-line"></div>
+
+    <!-- Section: Process -->
+    <section id="home-c" class="text-center py-2">
+      <div class="container">
+        <h4 class="section-title">Work in progress...</h4>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+      <div class="footer-content container">
+        <p>Copyright &copy; 2019. All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
