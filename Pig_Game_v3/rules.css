@@ -78,18 +78,21 @@ a {
   top: auto;
   font-family: 'Lato';
   color: #444;
+  font-size: 1rem;
+  font-weight: 300;
 }
 
 .back:hover {
-  color: #EB4D4D;
+  color: #501111;
 }
 
 .fa-arrow-left {
   color: #444;
+  
 }
 
 .fa-arrow-left:hover {
-  color: #EB4D4D;
+  color: #501111;
 }
 
 
