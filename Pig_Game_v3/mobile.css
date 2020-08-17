@@ -1,0 +1,19 @@
+
+
+.container {
+  padding: 60PX 20px 30px;
+  background-color: #f7f7f7;
+  
+}
+
+#title {
+  margin-bottom: 15px;
+  font-size: 20px;
+  padding: 0;
+}
+
+p {margin-left: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  color: #555;
+}
