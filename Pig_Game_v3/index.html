@@ -45,14 +45,54 @@
         <i class="ion-ios-download-outline"></i>Hold
       </button>
 
-      <a href="./rules.html" class="rules">Regolamento</a>
+      <!-- <a href="./rules.html" class="rules">Regolamento</a> -->
+
+      <!-- Popup Regolamento -->
+      <button data-rules-target="#rules" class="btn-rules">Regolamento</button>
+      <div class="rules" id="rules">
+        <div class="rules-header">
+          <div class="title-popup"><span>Regolamento</span></div>
+          <button data-close-popup class="close-popup">&times;</button>
+        </div>
+        <div class="rules-body">
+          <p>La partita si svolge a turno tra <span>due giocatori</span>.</p>
+          <p>
+            Ad ogni turno un giocatore tira i dadi finché vuole. Ogni risultato
+            viene aggiunto al punteggio del <span>ROUND</span> .
+          </p>
+          <p>
+            Se il giocatore corrente ottiene un <span>1</span> tutto il suo
+            punteggio <span>ROUND</span> viene azzerato, dopodiché il turno
+            passa automaticamente all'altro giocatore.
+          </p>
+          <p>
+            Il giocatore può scegliere di conservare il punteggio del
+            <span>ROUND</span> cliccando su <span>HOLD</span>, in questo modo
+            tutto il punteggio attuale verrà aggiunto al punteggio globale.
+            Dopodiché il turno passa all'altro giocatore.
+          </p>
+          <p>
+            Il primo giocatore che raggiunge un punteggio globale di
+            <span>100</span>, vince il gioco. Questo valore può essere
+            modificato inserendo in <span>FINAL SCORE</span> un qualsiasi numero
+            diverso da <span>100</span>.
+          </p>
+        </div>
+      </div>
+
+      <!-- Overlay Regolamento -->
+
       <input type="text" placeholder="Final Score" class="final-score" />
+
+      <div id="overlay"></div>
 
       <img src="dice-5.png" alt="Dice" class="dice" id="dice-1" />
       <img src="dice-5.png" alt="Dice" class="dice" id="dice-2" />
     </div>
 
     <!-- <script src="app.js"></script> -->
+
     <script src="challanges.js"></script>
+    <script src="rules_alert.js"></script>
   </body>
 </html>

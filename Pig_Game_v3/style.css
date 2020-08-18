@@ -29,9 +29,9 @@
     color: #333;
 }
 
-.rules:hover {
+/* .rules:hover {
     color: #EB4D4D;
-}
+} */
 
 a {
     text-decoration: none;
@@ -196,3 +196,98 @@ i {
 
 .winner { background-color: #f7f7f7; }
 .winner .player-name { font-weight: 300; color: #EB4D4D; }
+
+
+
+/* Regolamento popup*/
+.btn-rules {
+  padding: 10px;
+  transform: translate(135%, 1310%);
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+/* .rules {
+    position: fixed;
+    top: 55%;
+    left: 15%;
+    transform: translate(20%, -55%);
+    border: 1px solid #555;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: #f7f7f7;
+    width: 500px;
+
+} */
+
+.rules {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid #333;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: #f7f7f7;
+    width: 500px;
+    max-width: 80%;
+}
+
+.rules.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+p {
+    padding-bottom: 0.5rem;
+}
+
+span {
+    font-weight: 900;
+}
+
+.btn-rules:hover {
+    color: #EB4D4D;
+}
+
+.rules-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #555;
+}
+
+.rules-header .title-popup {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.rules-header .close-popup {
+    cursor: pointer;
+    border: none;
+    left: 95%;
+    font-size: 1.25rem;
+}
+
+.rules-body {
+    padding: 10px 15px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
